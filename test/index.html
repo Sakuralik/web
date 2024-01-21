@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <head>
+<title> HTML Test</title>
+<style> 
+    body{text-align:center} 
+  </style> 
+    </head>
+<body>
+  <h1> Hi!</h1>
+  <script>
+      document.write("<p>Thanks For Visit</p>")
+  </script>
+    <a href="https://login.live.com/">Please Log In</a><br>
+<p id="demo">
+这是新手的实验性网站
+</p>
+   <p> Hello,World!</p>
+   <a href="https://www.microsoft.com">这是Microsoft</a><br>
+   <a href="https://html.spec.whatwg.org/">HTML官网</a>
+   <hr>
+   <a href="https://code.visualstudio.com"><i>Coded by Visual Studios Code</i></a><br>
+   <script>
+function myFunction()
+{
+   x=document.getElementById("demo");
+   x.innerHTML="Hello JavaScript And HTML!";
+}
+</script>
+   <button type="button" onclick="myFunction()">Want To Say</button><br>
+   <script>
+    function changeImage()
+    {
+        element=document.getElementById('myimage')
+        if (element.src.match("bulbon"))
+        {
+            element.src="https://www.runoob.com/images/pic_bulboff.gif";
+        }
+        else
+        {
+            element.src="https://www.runoob.com/images/pic_bulbon.gif";
+        }
+    }
+    </script>
+    <img id="myimage" onclick="changeImage()" src="https://www.runoob.com/images/pic_bulboff.gif" width="100" height="180">
+    <p><input id="demo" type="number">
+    <script>
+        function myFunction()
+        {
+            var x=document.getElementById("demo").value;
+            if(x==""||isNaN(x))
+            {
+                alert("Not Words");
+            }
+        }
+        </script>
+        <button type="button" onclick="myFunction()">Click</button>
+    </p>
+</body>  
+<html>

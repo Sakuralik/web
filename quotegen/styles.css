@@ -1,0 +1,46 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('https://source.unsplash.com/1920x1080/?nature') center/cover fixed no-repeat;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff; /* Text color on top of the image */
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.7); /* Background color for the container */
+}
+
+h1 {
+    color: #fff;
+}
+
+#quote-container {
+    margin: 20px 0;
+}
+
+#quote {
+    font-size: 24px;
+    color: #fff;
+}
+
+#generate-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#generate-button:hover {
+    background-color: #2980b9;
+}

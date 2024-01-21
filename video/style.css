@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.video-container {
+    max-width: 100%; /* Make the container responsive */
+    width: 80%;
+    overflow: hidden; /* Hide overflow on small screens */
+}
+
+/* Style the video to be 100% of the container width */
+video {
+    width: auto;
+    height: auto;
+}
