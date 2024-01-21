@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>起始页</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./css/a.css">
+</head>
+<body>
+    <!-- <img class="background-animate" id="bgbox" src="./BG_A_Default_1.jpg" style="display: block; opacity: 1;"> -->
+    <h1 id="timet">00:00:00</h1>
+
+<!-- 搜索框 -->
+        <div class="search-container">
+            <form id="search-form" action="https://76i70529h4.goho.co/startpage/#">
+                <input type="text" id="search-input" placeholder="在这里输入搜索内容">
+                <button id="searchButton" onclick="performSearch()"><img id="searchicon" src="./imgs/9349901.png"></img>Search</button>
+            </form>
+            <div class="search-container">
+                <div class="search-engine-container">
+                    <label for="search-engine">搜索引擎：</label>
+                    <select id="search-engine" name="search-engine" class="custom-select">
+                        <option value="https://www.google.com/search?q=">Google</option>
+                        <option value="https://www.bing.com/search?q=">Bing</option>
+                        <option value="https://www.youtube.com/results?search_query=">Youtube</option>
+                        <option value="https://search.bilibili.com/all?keyword=">Bilibili</option>
+                        <option value="https://en.wikipedia.org/w/index.php?search=">Wikipedia_en</option>
+                        <option value="https://github.com/search?q=">Github</option>
+
+                    </select>
+                </div>
+        </div>
+    </div>
+    
+<!-- Tag -->
+    <div class="container">
+        <div class="container">
+            <ul>
+                <li><button onclick="location='https://www.bilibili.com'" id="list_bilibili" class="lia">Bilibili</button></li>
+                <li><button onclick="location='https://www.youtube.com'" id="list_google_youtube"class="lia">Youtube</button></li>
+                <li><button onclick="location='https://mail.google.com'" id="list_google_mail"class="lia">Gmail</button></li>
+                <li><button onclick="location='https://www.google.com/maps'" id="list_google_map"class="lia">Google Maps</button></li>
+                <li><button onclick="location='https://translate.google.com'" id="list_google_Translation"class="lia">Google Translation</button></li>
+                <li><button onclick="location='https://www.github.com'" id="list_github"class="lia">Github</button></li>
+                <li><button onclick="location='https://chat.openai.com'" id="list_chatgpt"class="lia">ChatGPT</button></li>
+                <li><button onclick="location='https://en.wikipedia.org'" id="list_wikipedia"class="lia">Wikipedia</button></li>
+                <li><button onclick="location='https://web.archive.org'" id="list_web_archive"class="lia">Wayback Machine</button></li>
+                <li><button onclick="location='https://open.spotify.com'" id="list_spotify"class="lia">Spotify</button></li>
+            </ul>
+        </div>
+    
+    </div>
+
+    <div class="header">
+        <a href="about.html" class="about-button">About</a>
+    </div>
+    
+
+    <div class="copyright-box">
+        <p>&copy; 2024 Sue and Partners LLC. All rights reserved.</p>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

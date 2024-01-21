@@ -1,0 +1,294 @@
+
+/* styles.css */
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Noto Sans SC', sans-serif;    margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background-image: url("../BG_A_Default_1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  /* transition:background-size 0.3s ease ; */
+/* 定义动画 */
+
+}
+
+
+html{
+  height: 100%;
+  touch-action: manipulation;
+}
+h1 {
+  text-align: center;
+  padding: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* search-container */
+
+.search-container {
+  text-align: center;
+  margin-bottom: 15px;
+  
+}
+
+.search-container input[type="text"] {
+  word-wrap: break-word;  
+  padding: 8px;
+  width: 300px;
+  height: 30px;
+  font-size: large;
+  transition: background-color 0.3s ease;
+  background-color: rgba(255, 255, 255, 0); /* 初始背景颜色 */
+  transition: width 0.5s ease,background-color 0.5s ease;
+  border: none;  /* hide 搜索框的边框 */
+  border-radius: 10px;
+  
+}
+.search-container input[type="text"]:focus {
+  outline: none;
+  /* animation: background-animation 0.3s forwards; */
+  width: 90%;
+  background-color: rgba(245, 245, 220,0.8);
+}
+.search-container input[type="text"]:hover{
+  width: 85%;
+  /* animation:searchhover 0.3s forwards; */
+
+  background-color: rgba(245, 245, 220,0.8);
+  
+}
+
+.search-container input[type="submit"] {
+  padding: 8px 16px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  
+}
+
+.search-container input[type="submit"]:hover {
+  background-color: #555;
+}
+
+/* Webside list of StartPage */
+ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 3 列 */
+  grid-gap: 3px; /* 列间距 */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  list-style: none;
+  width: 100%;
+}
+/* 列表 */
+li {
+  position: relative;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+
+}
+
+.container {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 60%;
+width: 100%;
+}
+.content {
+flex: 1;
+}
+
+
+li {
+margin: 10px;
+}
+/* 默认列表的按钮 */
+.lia{
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  font-size: large;
+  backdrop-filter: blur(2px);
+  height: 50px;
+  width: 100%;
+  border-radius: 10px;
+  
+  transition: width 0.3s ease,background-color 0.5s ease ,color 0.3s ease,border-radius 0.5s ease,backdrop-filter 0.3s ease;
+  
+}
+.lia:hover{
+  /* width: 50%; */
+  /* animation: buttona 0.3s forwards; */
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 60px;
+  /* font-size: medium; */
+}
+
+
+/* 浏览器搜索引擎选择 */
+select {
+  background-color: #f2f2f200;
+  border: none;
+  padding: 6px;
+  font-size: 14px;
+  width: 200px;
+  border-radius: 50px;
+  transition:background-color 0.5s ease , border-radius 0.5s ease;
+}
+
+select:hover {
+  background-color: rgba(255,255,255,0.3);
+  
+}
+
+select:focus {
+  background-color: rgba(255,255,255,0.8);
+  
+}
+
+/* 自定义选择框的下拉箭头样式 */
+select::-ms-expand {
+display: none; /* 隐藏IE浏览器的下拉箭头 */
+}
+
+select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 50%;
+  right: 6px;
+  transform: translateY(-50%);
+}
+/* 隐藏searchbutton */
+#search-button{
+  background-color: rgb(255, 255, 255,1);
+  background-image:url(./imgs/9349901.png) ;
+}
+/* Set color*/
+#list_bilibili:hover{
+background-color: rgba(0, 153, 299, 0.5);
+color: #fff;
+}
+#list_google_youtube:hover{
+background-color: rgba(255, 0, 0, 0.8);
+color: #fff;
+}
+#list_google_mail:hover{
+background-color: rgba(0, 0, 255, 0.911);
+}
+#list_github:hover{
+background-color: rgba(0, 0, 0, 0.8);;
+color: rgba(255,255,255,0.8);
+}
+#list_chatgpt:hover{
+background-color: rgba(25, 195, 165, 0.8);;
+color: rgba(0,0,0,0.8);
+}
+
+/* Add the following styles to your existing styles.css or create a new one */
+
+/* Add or update the following styles in your existing styles.css */
+
+button {
+padding: 10px 15px;
+cursor: pointer;
+background-color: #4CAF50;
+color: #fff;
+border: none;
+border-radius: 5px;
+font-size: 16px;
+transition: background-color 0.3s;
+}
+
+button:hover {
+background-color: #45a049;
+}
+
+/* Style the button text */
+button span {
+display: inline-block;
+padding-left: 5px; /* Add some spacing between the button and the text */
+}
+#searchicon{
+align-content: center;
+width: 15px;
+height: 15px;
+}
+
+.copyright-box {
+  background-color: #3498db; /* Background color */
+  color: #fff;
+  padding: 2.5px 5px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 14px;
+  border-top: 2px solid #2c3e50; /* Border color */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+.copyright-box:hover {
+  background-color: #2980b9; /* Change background color on hover */
+}
+
+.copyright-box a {
+  color: #2ecc71; /* Link color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.copyright-box a:hover {
+  color: #fff; /* Change link color on hover */
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px;
+}
+
+.about-button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 8px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.about-button:hover {
+  background-color: #2980b9;
+}
+

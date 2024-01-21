@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact Us</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            font-family: 'Noto Sans', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .header {
+            display: flex;
+            justify-content: flex-end; /* Align buttons to the right */
+            align-items: center;
+            position: fixed;
+            top: 0;
+            right: 0;
+            padding: 10px;
+}
+
+        
+        .about-button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .about-button:hover {
+            background-color: #0056b3;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h2 {
+            color: #007bff;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+        }
+
+        .contact-info p {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .contact-form {
+            margin-top: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+        }
+
+        .form-group button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form-group button:hover {
+            background-color: #0056b3;
+        }
+
+        .back-button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 20px;
+            top: 10px;
+            right: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div>   
+<a href="index.html" class="back-button">Main Page</a>
+</div>
+
+<div class="content">
+    <h2>Contact Us</h2>
+
+    <div class="contact-info">
+        <p>
+            For any inquiries or assistance, feel free to reach out to us using the contact form or through the following contact information:
+        </p>
+        <p><strong>Email:</strong> suxvshen@gmail.com</p>
+        <p><strong>Phone:</strong> +1 (123) 469-8795</p>
+        <p><strong>Address:</strong> 110 11th Street, New York, 10041</p>
+    </div>
+
+    <div class="contact-form">
+        <form action="submit_form.php" method="post">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+<div class="copyright-box">
+    <p>&copy; 2024 Sue and Partners LLC. All rights reserved.</p>
+</div>
+
+</body>
+</html>
